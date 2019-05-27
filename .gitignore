@@ -1,0 +1,4 @@
+*.ignore
+/test/
+/installers/env/*
+!/installers/env/.keep
