@@ -35,7 +35,7 @@ source "${alis_installer_wd}/../../scripts/core/pacman-add-multilib.bash"
 print_line
 
 # install aur package manager
-source "${alis_installer_wd}/../../scripts/base/trizen-install.bash" "$CONFIG_USER_USERNAME"
+source "${alis_installer_wd}/../../scripts/base/yay.bash" "true" "$CONFIG_USER_USERNAME"
 print_line
 
 alis_shared_debug "ISVM: ${IS_VM}"
