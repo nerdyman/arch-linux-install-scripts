@@ -28,7 +28,7 @@ function alis_i3_xfce_install {
 	if [[ $_should_install == true ]]; then
 		echo "=> Installing packages"
 		# shellcheck disable=SC2086
-		sudo -H -u $_user trizen -S --needed --noconfirm --noedit $_install_targets
+		sudo -H -u $_user yay -S --needed --noconfirm --noedit $_install_targets
 
 		if [[ ! -f "${_user_i3_config}" ]]; then
 			echo "=> Writing new i3 config to '${_user_i3_config}'"

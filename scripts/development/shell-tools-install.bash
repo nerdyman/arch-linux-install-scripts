@@ -20,7 +20,7 @@ function alis_shell_tools_install {
 
 	echo "=> Installing packages"
 	# shellcheck disable=SC2086
-	sudo -H -u $_user trizen -S --noconfirm --needed shellcheck
+	sudo -H -u $_user yay -S --noconfirm --needed shellcheck
 
 	echo -e "\\n[${_script_name}] Done\\n"
 }

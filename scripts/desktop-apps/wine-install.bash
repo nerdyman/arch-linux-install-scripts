@@ -22,7 +22,7 @@ function alis_wine_install {
 	echo "=> Install targets: ${_install_targets}"
 
 	# shellcheck disable=SC2086
-	sudo -H -u "$_user" trizen -S --needed --noconfirm --noedit $_install_targets
+	sudo -H -u "$_user" yay -S --needed --noconfirm --noedit $_install_targets
 
 	echo -e "\\n[${_script_name}] Done\\n"
 }

@@ -24,9 +24,9 @@ function alis_aws_tools {
 
 	# shellcheck disable=SC2086
 	if $_should_install; then
-		sudo -H -u "$_user" trizen -S --needed --noconfirm --no-edit $_install_targets
+		sudo -H -u "$_user" yay -S --needed --noconfirm --no-edit $_install_targets
 	else
-		sudo -H -u "$_user" trizen -Rs --needed --noconfirm $_install_targets
+		sudo -H -u "$_user" yay -Rs --needed --noconfirm $_install_targets
 	fi
 
 	echo -e "\\n[${_script_name}] Done\\n"

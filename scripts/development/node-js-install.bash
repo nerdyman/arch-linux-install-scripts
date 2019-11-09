@@ -19,7 +19,7 @@ function alis_node_js_install {
 	local _user=${1:-$_default_user}
 
 	echo "=> Installing packages"
-	sudo -H -u "$_user" trizen -S --noconfirm --needed nodejs npm yarn nvm
+	sudo -H -u "$_user" yay -S --noconfirm --needed nodejs npm yarn nvm
 
 	echo "=> Setting 'fs.inotify.max_user_watches' to prevent ENOSPC issues"
 	echo "fs.inotify.max_user_watches=524288" | tee /etc/sysctl.d/40-max-user-watches.conf

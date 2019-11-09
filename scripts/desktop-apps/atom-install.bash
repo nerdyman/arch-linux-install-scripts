@@ -24,7 +24,7 @@ function alis_atom_install {
 
 	echo "=> Install targets: ${_install_targets}"
 	# shellcheck disable=SC2086
-	sudo -H -u "$_user" trizen -S --noconfirm --needed --noedit $_install_targets
+	sudo -H -u "$_user" yay -S --noconfirm --needed --noedit $_install_targets
 
 	local _apm_install_targets="atom-material-ui color-picker docblockr editorconfig enhanced-tabs file-icons git-blame git-time-machine highlight-bad-chars highlight-selected language-ini linter-markdown linter-shellcheck minimap pigments pinned-tabs pure-syntax sublime-style-column-selection tabs-to-spaces tree-view-git-status vim-modeline"
 

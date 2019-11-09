@@ -25,11 +25,11 @@ function alis_lutris {
 	if $_should_install; then
 		echo "=> Install targets: ${_install_targets}"
 		# shellcheck disable=SC2086
-		sudo -H -u "$_user" trizen -S --needed --noconfirm --noedit $_install_targets
+		sudo -H -u "$_user" yay -S --needed --noconfirm --noedit $_install_targets
 	else
 		echo "=> Removal targets: ${_install_targets}"
 		# shellcheck disable=SC2086
-		sudo -H -u "$_user" trizen -Rs --noconfirm $_install_targets
+		sudo -H -u "$_user" yay -Rs --noconfirm $_install_targets
 	fi
 
 	echo -e "\\n[${_script_name}] Done\\n"
