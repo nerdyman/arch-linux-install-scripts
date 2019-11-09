@@ -34,7 +34,7 @@ function alis_pacstrap {
 		pacman -Syy --noconfirm archlinux-keyring
 	fi
 
-	local _packages="base base-devel parted dosfstools btrfs-progs f2fs-tools gptfdisk ntp net-tools linux-headers"
+	local _packages="base base-devel parted dosfstools btrfs-progs f2fs-tools gptfdisk ntp net-tools linux-headers lvm2"
 
 	# add requested kernels to package list
 	IFS=', ' read -r -a _kernels_array <<< "$_kernels"

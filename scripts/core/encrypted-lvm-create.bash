@@ -36,9 +36,6 @@ function alis_encrypted_lvm_create {
 	local _partlabel_system=${3:-$_default_partlabel_system}
 	local _partlabel_efi=${4:-$_default_partlabel_efi}
 
-	echo "=> Checking for lvm2 installation"
-	pacman -S --needed lvm2
-
 	echo "=> Formatting boot partition"
 	mkfs.fat -F 32 -n $_partlabel_efi /dev/disk/by-partlabel/$_partlabel_efi
 
