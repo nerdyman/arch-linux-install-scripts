@@ -192,19 +192,10 @@ source "${alis_installer_wd}/../../scripts/helpers/wait-for-container-ready.bash
 
 print_line
 
-# run mkinitcpio on container for vanilla kernel
-source "${alis_installer_wd}/../../scripts/helpers/systemd-run.bash" \
-	"${CONFIG_HOSTNAME}" \
-	"/bin/mkinitcpio -p linux" \
-	true
-
-print_line
-
-# run mkinitcpio on container for hardened kernel
-source "${alis_installer_wd}/../../scripts/helpers/systemd-run.bash" \
-	"${CONFIG_HOSTNAME}" \
-	"/bin/mkinitcpio -p linux-zen" \
-	true
+# run mkinitcpio
+source "${alis_installer_wd}/../../scripts/helpers/chroot.bash" \
+	"${MOUNT_POINT}" \
+	"mkinitcpio -P"
 
 print_line
 

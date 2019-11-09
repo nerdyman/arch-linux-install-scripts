@@ -21,7 +21,7 @@ export IS_VM=$([[ $(dmidecode --type 1 | grep VirtualBox) ]] && echo true || ech
 
 # config - basic machine config
 export CONFIG_EDITOR="vim"
-export CONFIG_GFX_DRIVERS=$ALIS_GPU_DRIVER_NVIDIA_LEGACY # gfx drivers to install - see consts.bash for options
+export CONFIG_GFX_DRIVERS=$ALIS_GPU_DRIVER_NVIDIA # gfx drivers to install - see consts.bash for options
 export CONFIG_HOSTNAME="abox" # hostname for install
 export CONFIG_LOCALE="en_GB" # primary locale
 export CONFIG_LOCALE_SECONDARY="en_US" # secondary locale
