@@ -35,7 +35,7 @@ source "${alis_installer_wd}/../../scripts/core/pacman-add-multilib.bash"
 print_line
 
 # install aur package manager
-source "${alis_installer_wd}/../../scripts/helpers/aur-package-install.bash" \
+source "${alis_installer_wd}/../../scripts/base/aur-package-install.bash" \
 	"yay" \
 	"$CONFIG_USER_USERNAME"
 print_line
