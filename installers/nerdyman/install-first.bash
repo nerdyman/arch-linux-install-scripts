@@ -156,17 +156,17 @@ source "${alis_installer_wd}/../../scripts/helpers/chroot.bash" \
 
 print_line
 
-# install user shell
-source "${alis_installer_wd}/../../scripts/helpers/chroot.bash" \
-	"${MOUNT_POINT}" \
-	"/bin/bash ${ALIS_COPY_DIRECTORY}/scripts/core/zsh-install.bash /home/$CONFIG_USER_USERNAME/.zshrc $CONFIG_USER_USERNAME true"
-
-print_line
-
 # add superuser
 source "${alis_installer_wd}/../../scripts/helpers/chroot.bash" \
 	"${MOUNT_POINT}" \
 	"/bin/bash ${ALIS_COPY_DIRECTORY}/scripts/core/user-create.bash $CONFIG_USER_USERNAME $CONFIG_USER_SHELL"
+
+print_line
+
+# install superuser shell
+source "${alis_installer_wd}/../../scripts/helpers/chroot.bash" \
+	"${MOUNT_POINT}" \
+	"/bin/bash ${ALIS_COPY_DIRECTORY}/scripts/core/zsh-install.bash $CONFIG_USER_USERNAME true /home/${CONFIG_USER_USERNAME}/.zshrc"
 
 print_line
 

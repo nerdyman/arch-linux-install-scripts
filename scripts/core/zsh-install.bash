@@ -22,7 +22,7 @@ function alis_zsh_install {
 	fi
 
 	local _user=${1:-$_default_user}
-	local _change_user_shell=${3:-$_default_change_user_shell}
+	local _change_user_shell=${2:-$_default_change_user_shell}
 	local _zshrc_path=${3:-$_default_zshrc_path}
 
 	local _install_targets="zsh zsh-completions"
