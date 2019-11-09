@@ -2,6 +2,12 @@
 
 An opinionated set of scripts to ease the installation and configuration of Arch Linux.
 
+## Download
+
+```
+curl -L https://codeload.github.com/nerdyman/arch-linux-install-scripts/tar.gz/master | tar xz
+```
+
 ## Why?
 
 Arch is awesome&hellip; but it's a hassle to set-up, especially when you have a specific
