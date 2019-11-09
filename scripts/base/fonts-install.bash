@@ -18,7 +18,7 @@ function alis_fonts_install {
 	local _user=${1:-$_default_user}
 
 	# @TODO find smaller repo for 'nerd-fonts-complete', it's currently 2GB :(
-	local _install_targets="cairo fontconfig freetype2 lib32-cairo lib32-freetype2 lib32-fontconfig adobe-source-han-sans-otc-fonts adobe-source-han-sans-cn-fonts adobe-source-han-sans-tw-fonts adobe-source-han-sans-jp-fonts adobe-source-han-sans-kr-fonts bdf-unifont ttf-bitstream-vera ttf-croscore ttf-dejavu ttf-fira-mono ttf-liberation ttf-hannom ttf-roboto ttf-roboto-mono-powerline-git ttf-symbola ttf-twemoji-color wqy-zenhei"
+	local _install_targets="cairo fontconfig freetype2 lib32-cairo lib32-freetype2 lib32-fontconfig adobe-source-han-sans-otc-fonts adobe-source-han-sans-cn-fonts adobe-source-han-sans-tw-fonts adobe-source-han-sans-jp-fonts adobe-source-han-sans-kr-fonts bdf-unifont ttf-bitstream-vera ttf-croscore ttf-dejavu ttf-fira-mono ttf-liberation ttf-hannom ttf-joypixels ttf-roboto ttf-roboto-mono-powerline-git ttf-symbola wqy-zenhei"
 
 	echo "=> Install targets: ${_install_targets}"
 
