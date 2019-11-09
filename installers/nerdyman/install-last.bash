@@ -49,8 +49,8 @@ source "${alis_installer_wd}/../../scripts/base/fonts-install.bash" "$CONFIG_USE
 print_line
 
 # add emoji font config
-source "${alis_installer_wd}/../../scripts/base/fonts-emoji-config.bash"
-print_line
+# source "${alis_installer_wd}/../../scripts/base/fonts-emoji-config.bash"
+# print_line
 
 # configure pretty font rendering
 source "${alis_installer_wd}/../../scripts/base/font-rendering-set.bash"
@@ -126,16 +126,16 @@ print_line
 source "${alis_installer_wd}/../../scripts/base/qt-install.bash"
 print_line
 
-source "${alis_installer_wd}/../../scripts/base/qt-gtk-style.bash" "$CONFIG_USER_USERNAME"
-print_line
+# source "${alis_installer_wd}/../../scripts/base/qt-gtk-style.bash" "$CONFIG_USER_USERNAME"
+# print_line
 
 # install desktop environment
-source "${alis_installer_wd}/../../scripts/desktop-environments/i3-xfce-frankenstein-install.bash" "$CONFIG_USER_USERNAME"
-print_line
+# source "${alis_installer_wd}/../../scripts/desktop-environments/i3-xfce-frankenstein-install.bash" "$CONFIG_USER_USERNAME"
+# print_line
 
 # install terminal emulator
-source "${alis_installer_wd}/../../scripts/desktop-apps/termite.bash" "$CONFIG_USER_USERNAME" true
-print_line
+# source "${alis_installer_wd}/../../scripts/desktop-apps/termite.bash" "$CONFIG_USER_USERNAME" true
+# print_line
 
 # set up git
 source "${alis_installer_wd}/../../scripts/development/git-global-user.bash" \
@@ -171,27 +171,23 @@ if $IS_VM; then
 	print_line
 fi
 
-# install web browsers
-source "${alis_installer_wd}/../../scripts/desktop-apps/browsers-install.bash" "$CONFIG_USER_USERNAME"
-print_line
+# # install web browsers
+# source "${alis_installer_wd}/../../scripts/desktop-apps/browsers-install.bash" "$CONFIG_USER_USERNAME"
+# print_line
 
 # install productivity tools
 source "${alis_installer_wd}/../../scripts/desktop-apps/productivity-tools-install.bash" "$CONFIG_USER_USERNAME"
 print_line
 
-# install web browsers
-source "${alis_installer_wd}/../../scripts/desktop-apps/browsers-install.bash" "$CONFIG_USER_USERNAME"
-print_line
+# # install atom
+# source "${alis_installer_wd}/../../scripts/desktop-apps/atom-install.bash" \
+# 	"$CONFIG_USER_USERNAME"
+# 	"$CONFIG_LOCALE"
+# print_line
 
-# install atom
-source "${alis_installer_wd}/../../scripts/desktop-apps/atom-install.bash" \
-	"$CONFIG_USER_USERNAME"
-	"$CONFIG_LOCALE"
-print_line
-
-# install atom web developer packages
-source "${alis_installer_wd}/../../scripts/desktop-apps/atom-packages-web-developer-install.bash" "$CONFIG_USER_USERNAME"
-print_line
+# # install atom web developer packages
+# source "${alis_installer_wd}/../../scripts/desktop-apps/atom-packages-web-developer-install.bash" "$CONFIG_USER_USERNAME"
+# print_line
 
 # install gaming packages
 source "${alis_installer_wd}/../../meta/gaming.bash" true "$CONFIG_USER_USERNAME"
