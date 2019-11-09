@@ -163,32 +163,32 @@ function alis_shared_pause {
 
 # Install a shell if it isn't installed
 # Usage: `alis_shared_shell_install "/bin/zsh"`
-function alis_shared_shell_install {
-	local _shell=$1
-	local _file_path="${MOUNT_POINT}/etc/shells"
-
-	echo "=> Checking if '${_shell}' exists in ${_file_path}"
-
-	if grep -Fxq "$_shell" "$_file_path"; then
-		echo "==> Shell already exists, skipping install"
-	else
-		# get shell name e.g. '/bin/zsh' > 'zsh'
-		local _shell_name
-		_shell_name=$(basename "$_shell")
-
-		# if zsh
-		if [[ $_shell_name == "zsh" ]]; then
-			echo "==> Shell doesn't exist, installing"
-			source "${alis_shared_wd}/../scripts/core/zsh-install.bash" \
-				"${MOUNT_POINT}/home/${CONFIG_USER_USERNAME}/.zshrc"
-				$CONFIG_USER
-				true
-		# shell not supported
-		else
-			echo "=> WARN: shell '${_shell_name}' is not supported, skipping"
-		fi
-	fi
-}
+# function alis_shared_shell_install {
+# 	local _shell=$1
+# 	local _file_path="${MOUNT_POINT}/etc/shells"
+#
+# 	echo "=> Checking if '${_shell}' exists in ${_file_path}"
+#
+# 	if grep -Fxq "$_shell" "$_file_path"; then
+# 		echo "==> Shell already exists, skipping install"
+# 	else
+# 		# get shell name e.g. '/bin/zsh' > 'zsh'
+# 		local _shell_name
+# 		_shell_name=$(basename "$_shell")
+#
+# 		# if zsh
+# 		if [[ $_shell_name == "zsh" ]]; then
+# 			echo "==> Shell doesn't exist, installing"
+# 			source "${alis_shared_wd}/../scripts/core/zsh-install.bash" \
+# 				"${MOUNT_POINT}/home/${CONFIG_USER_USERNAME}/.zshrc"
+# 				$CONFIG_USER
+# 				true
+# 		# shell not supported
+# 		else
+# 			echo "=> WARN: shell '${_shell_name}' is not supported, skipping"
+# 		fi
+# 	fi
+# }
 
 # standard init commands for any installer script
 function alis_shared_installer_init {
