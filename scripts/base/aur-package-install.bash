@@ -45,7 +45,7 @@ function alis_install_from_aur {
 
 		cd $_pkg
 
-		su $_user -c makepkg -csi --noconfirm
+		su $_user -c "makepkg -csi --noconfirm"
 	done
 
 	popd
