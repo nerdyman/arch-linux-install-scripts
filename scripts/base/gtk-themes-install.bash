@@ -21,7 +21,7 @@ function alis_gtk_themes_install {
 
 	echo "=> Install targets: ${_install_targets}"
 
-	sudo -H -u $_user yay -S --needed --noconfirm --noedit $_install_targets
+	sudo -H -u $_user yay -S --needed --noconfirm $_install_targets
 
 	echo -e "\n[${_script_name}] Done\n"
 }

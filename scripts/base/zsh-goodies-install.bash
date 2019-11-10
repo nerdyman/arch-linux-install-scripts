@@ -31,7 +31,7 @@ function alis_zsh_goodies_install {
 	local _install_targets="zsh-syntax-highlighting oh-my-zsh-git"
 
 	echo "=> Install targets: ${_install_targets}"
-	sudo -H -u $_user yay -S --needed --noconfirm --noedit $_install_targets
+	sudo -H -u $_user yay -S --needed --noconfirm $_install_targets
 
 	# copy oh-my-zsh config
 	echo "=> Copying default oh-my-zsh config to '${_zshrc_path}'"

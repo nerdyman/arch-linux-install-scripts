@@ -19,7 +19,7 @@ function alis_productivity_tools_install {
 	local _user=${1:-$_default_user}
 
 	echo "=> Installing packages"
-	sudo -H -u "$_user" yay -S --noconfirm --needed --noedit flameshot peek
+	sudo -H -u "$_user" yay -S --noconfirm --needed flameshot peek
 
 	echo -e "\\n[${_script_name}] Done\\n"
 }

@@ -25,7 +25,7 @@ function alis_lutris {
 	if $_should_install; then
 		echo "=> Install targets: ${_install_targets}"
 		# shellcheck disable=SC2086
-		sudo -H -u "$_user" yay -S --needed --noconfirm --noedit $_install_targets
+		sudo -H -u "$_user" yay -S --needed --noconfirm $_install_targets
 	else
 		echo "=> Removal targets: ${_install_targets}"
 		# shellcheck disable=SC2086
