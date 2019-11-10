@@ -29,7 +29,7 @@ function alis_zsh_install {
 
 	echo "=> Install targets: ${_install_targets}"
 	# shellcheck disable=SC2086
-	sudo -H -u "$_user" pacman -S --needed --noconfirm $_install_targets
+	pacman -S --needed --noconfirm $_install_targets
 
 	if [ ! -f "$_zshrc_path" ]; then
 		echo "=> ${_zshrc_path} does not exist, creating new one"
@@ -46,7 +46,7 @@ function alis_zsh_install {
 
 	if [[ $_change_user_shell == true ]]; then
 		echo "=> Running chsh for: ${_user}"
-		sudo -H -u "$_user" chsh -s /bin/zsh "$_user"
+		chsh -s /bin/zsh "$_user"
 	fi
 
 	echo -e "\n[${_script_name}] Done\n"
