@@ -27,7 +27,7 @@ function alis_meta_gaming {
 	echo "=> Including scripts relative to \"${_script_wd}\""
 	source "${_script_wd}/../../scripts/desktop-apps/wine-install.bash" "$_user"
 	source "${_script_wd}/../../scripts/desktop-apps/steam-install.bash" "$_user"
-	source "${_script_wd}/../../scripts/desktop-apps/lutris.bash" true "$_user"
+	# source "${_script_wd}/../../scripts/desktop-apps/lutris.bash" true "$_user"
 
 	echo -e "\\n[${_script_name}] Done\\n"
 }

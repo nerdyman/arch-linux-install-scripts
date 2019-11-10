@@ -17,7 +17,7 @@ function alis_wine_install {
 
 	local _user=${1:-$_default_user}
 
-	local _install_targets="icoutils dxvk-bin wine wine_gecko wine-mono winetricks"
+	local _install_targets="icoutils dxvk-bin wine-staging wine_gecko wine-mono"
 
 	echo "=> Install targets: ${_install_targets}"
 
