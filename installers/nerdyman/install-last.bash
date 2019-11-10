@@ -192,7 +192,7 @@ print_line
 # print_line
 
 # install gaming packages
-source "${alis_installer_wd}/../../scripts/meta/gaming.bash" true "$CONFIG_USER_USERNAME"
+source "${alis_installer_wd}/../../scripts/meta/gaming.bash" "$CONFIG_USER_USERNAME"
 print_line
 
 # clean up packages
