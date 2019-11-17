@@ -50,10 +50,6 @@ print_line
 source "${alis_installer_wd}/../../scripts/base/fonts-install.bash" "$CONFIG_USER_USERNAME"
 print_line
 
-# add emoji font config
-# source "${alis_installer_wd}/../../scripts/base/fonts-emoji-config.bash"
-# print_line
-
 # configure pretty font rendering
 source "${alis_installer_wd}/../../scripts/base/font-rendering-set.bash"
 print_line
