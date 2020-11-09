@@ -8,7 +8,7 @@ function alis_qt_install {
 	local _default_user
 	_default_user="$(whoami)"
 
-	if [ "$1" = "help" ]; then
+	if [[ "$1" = "help" ]]; then
 		echo "You can specify a user to write the config for (default: ${_default_user})"
 		echo "=> Usage:"
 		echo "${_script_name} myuser"

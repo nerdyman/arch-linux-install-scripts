@@ -23,7 +23,7 @@ function alis_steam_install {
 	echo "=> Install targets: ${_install_targets}"
 
 	# shellcheck disable=2086
-	sudo -u "$_user" pacman -S --needed --noconfirm $_install_targets
+	sudo -H -u "$_user" yay -S --needed --noconfirm $_install_targets
 
 	# @NOTE steam requires 'en_US' locale
 	echo "=> Enabling \"en_US.UTF-8 UTF-8\" locale"
