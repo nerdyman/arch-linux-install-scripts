@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function alis_i3_xfce_install {
+function alis_desktop_environment_xfce {
 	# shellcheck disable=SC2155
 	local _script_name="$(basename "${BASH_SOURCE[0]}")"
 	echo -e "[${_script_name}]\\n"
@@ -9,7 +9,7 @@ function alis_i3_xfce_install {
 	_default_user=$(whoami)
 
 	if [[ "$1" == "help" ]]; then
-		echo -e "=> Install i3 with an assortment of xfce4 packages along with additional desktop tools.\\n"
+		echo -e "=> XFCE + i3 + Goodies\\n"
 		echo "=> You can specify the following:"
 		echo "==> User to run install as (default: ${_default_user})"
 		echo "[${_script_name}]"
@@ -18,7 +18,7 @@ function alis_i3_xfce_install {
 
 	local _user=${1:-$_default_user}
 
-	local _install_targets="compton eog ffmpegthumbnailer file-roller flameshot i3-gaps libnotify lxappearance nitrogen redshift raw-thumbnailer rofi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman tumbler xfce4-panel xfce4-pulseaudio-plugin xfce4-mount-plugin xfce4-notifyd xfce4-statusnotifier-plugin"
+	local _install_targets="compton-tryone-git eog file-roller flameshot i3-gaps-rounded-git kitty nautilus-typeahead nitrogen redshift rofi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman xfce4 xfce4-goodies"
 
 	echo "=> Install targets: ${_install_targets}"
 
@@ -28,4 +28,4 @@ function alis_i3_xfce_install {
 	echo -e "\\n[${_script_name}] Done\\n"
 }
 
-alis_i3_xfce_install "$1"
+alis_desktop_environment_xfce "$1"

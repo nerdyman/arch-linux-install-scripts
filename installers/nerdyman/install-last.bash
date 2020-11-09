@@ -128,8 +128,8 @@ print_line
 # print_line
 
 # install desktop environment
-# source "${alis_installer_wd}/../../scripts/desktop-environments/i3-xfce-frankenstein-install.bash" "$CONFIG_USER_USERNAME"
-# print_line
+source "${alis_installer_wd}/../../scripts/desktop-environments/xfce-i3.bash" "$CONFIG_USER_USERNAME"
+print_line
 
 # install terminal emulator
 # source "${alis_installer_wd}/../../scripts/desktop-apps/termite.bash" "$CONFIG_USER_USERNAME" true
