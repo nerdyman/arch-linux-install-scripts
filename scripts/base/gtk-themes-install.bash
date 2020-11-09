@@ -17,7 +17,7 @@ function alis_gtk_themes_install {
 
 	local _user=${1:-$_default_user}
 
-	local _install_targets="adapta-gtk-theme arc-gtk-theme arc-icon-theme gnome-themes-extra vertex-themes"
+	local _install_targets="mojave-gtk-theme-git whitesur-icon-theme-git"
 
 	echo "=> Install targets: ${_install_targets}"
 
