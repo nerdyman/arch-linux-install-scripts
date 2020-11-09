@@ -6,7 +6,7 @@ function alis_qt_install {
 	echo -e "[${_script_name}]\n"
 
 	echo "=> Installing packages"
-	yay -S --needed --noconfirm qt5-base qt5-styleplugins qt5-wayland
+	sudo -H -u "$_user" yay -S --needed --noconfirm qt5-base qt5-styleplugins qt5-wayland
 
 	echo -e "\n[${_script_name}] Done\n"
 }
