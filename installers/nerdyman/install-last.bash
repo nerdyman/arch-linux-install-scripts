@@ -121,7 +121,7 @@ source "${alis_installer_wd}/../../scripts/meta/gtk.bash" "${CONFIG_USER_USERNAM
 print_line
 
 # install qt
-source "${alis_installer_wd}/../../scripts/base/qt-install.bash"
+source "${alis_installer_wd}/../../scripts/base/qt-install.bash" "$CONFIG_USER_USERNAME"
 print_line
 
 # source "${alis_installer_wd}/../../scripts/base/qt-gtk-style.bash" "$CONFIG_USER_USERNAME"
