@@ -26,9 +26,6 @@ function alis_fonts_install {
 		ttf-croscore ttf-dejavu ttf-fira-mono ttf-liberation ttf-hannom \
 		ttf-joypixels ttf-roboto ttf-symbola wqy-zenhei
 
-	echo "=> Enabling joypixels emoji color font"
-	sudo -u "$_user" ln -s /etc/fonts/conf.avail/75-joypixels.conf /etc/fonts/conf.d/75-joypixels.conf
-
 	echo -e "\\n[${_script_name}] Done\\n"
 }
 
