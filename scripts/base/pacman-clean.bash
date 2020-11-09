@@ -11,9 +11,6 @@ function alis_pacman_clean {
 
 	pacman -Rsc --noconfirm $(pacman -Qqdt)
 
-	echo "=> Running pacman-optimize"
-	pacman-optimize
-
 	echo -e "\\n[${_script_name}] Done\\n"
 }
 
