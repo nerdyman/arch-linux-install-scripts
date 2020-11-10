@@ -18,7 +18,7 @@ function alis_desktop_environment_xfce {
 
 	local _user=${1:-$_default_user}
 
-	local _install_targets="compton-tryone-git eog file-roller flameshot i3-gaps-rounded-git kitty nautilus-typeahead nitrogen redshift rofi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman xfce4 xfce4-goodies"
+	local _install_targets="compton-tryone-git eog file-roller flameshot gtk3-nocsd-git i3-gaps-rounded-git kitty nautilus-typeahead nitrogen redshift rofi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman xfce4 xfce4-goodies"
 
 	echo "=> Install targets: ${_install_targets}"
 
