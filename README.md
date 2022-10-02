@@ -1,3 +1,7 @@
+## This repository is no longer maintained, if you'd like a similar set up [check out my archinstall](https://github.com/nerdyman/dotfiles/tree/main/archinstall) scripts.
+
+---
+
 # Arch Linux Install Scripts (ALIS)
 
 An opinionated set of scripts to ease the installation and configuration of Arch Linux.
